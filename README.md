@@ -971,6 +971,7 @@ Projects building with or extending x402.
 - [PaladinFi](https://paladinfi.com) - Pre-trade trust verification + swap router for AI agents on Base (8453). `POST /v1/trust-check` is x402-paid at $0.001 USDC/call: live OFAC SDN screening (refreshed daily from U.S. Treasury XML), GoPlus token security, Etherscan source verification, and anomaly heuristics. Free `/v1/trust-check/preview` returns sample fixtures for client testing. Bundled with `/v1/quote` — MCP-native swap router via 0x Settler, 10bps integrated fee, non-custodial. ([Swap MCP](https://swap.paladinfi.com/mcp)) | ([GitHub](https://github.com/paladinfi/paladin-swap-mcp)) | ([Health](https://swap.paladinfi.com/health))
 - [MeckerCapital Signal API](https://api.meckercapital.com) - Statistical arbitrage (pairs trading) signals for crypto perpetual futures via 10 x402-paid endpoints. Z-scores, regime detection, position sizing, and ranked opportunities across 50+ cointegrated pairs on Hyperliquid and Extended. $0.05–$1.00 USDC per call on Base via CDP Facilitator. Also available as MCP server. ([Website](https://www.meckercapital.com/signal-api)) ([Agentic.Market](https://agentic.market/?chart=payment-volume&service=api-meckercapital-com))
 - **[DeFi Intelligence Engine](https://defi-yield-engine-production.up.railway.app/mcp)** — Complete DeFi intelligence across Yield, Liquid Staking, Restaking, RWA, Perpetuals, Gas Optimization and Smart Contract Security. Risk-adjusted single recommendations with reasoning — 97% fewer tokens than raw data. 18 tools including gas window prediction, GoPlus contract scoring, APY alerts, and A2A Agent Card. 0.05 USDC/call on Base · MCP streamable-http · x402 native
+- [Steward](https://pay.brianbooms.com) — Pay-per-call data APIs for AI agents: 92 endpoints (jokes, fortunes, weather, FX, crypto, geocode, sleep, and more) settled in USDC on Base via raw x402 v1. $0.005–$0.99 per call, no API keys, no signup. ([Discovery](https://pay.brianbooms.com/.well-known/x402) | [MCP](https://github.com/brianbooms/steward-mcp))
 
 ### Developer Tools
 
@@ -1218,7 +1219,7 @@ The missing real-world layer for x402. AI agents use AgentPay to find, book and 
 
 An AI agent that runs as its own business on Base mainnet — sells 22 paid HTTP endpoints behind x402, self-extends at runtime by hot-reloading new endpoints from JS plugin files (fs.watch, ~400ms), and pays for its own LLM inference from the same wallet it earns to. Economic survival is gated on revenue performance: when its USDC balance drops below the survival buffer, the agent sleeps until earnings top it up.
 
-**Live discovery (try without paying):**ZZMARKERZZ
+**Live discovery (try without paying):**
 ```bash
 curl https://api.autonomagic.org/.well-known/x402.json
 ```
