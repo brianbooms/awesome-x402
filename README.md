@@ -135,6 +135,7 @@ Official and community implementations of the x402 protocol.
 Real companies using x402 in production with proven scale and transaction volumes.
 - [AfaAgent x402 API Suite](https://afaagent-x402-api.storm-fly.workers.dev) - 43 production-grade x402 APIs (DeFi, wallet security, AI/ML, developer tools, SEO) with pay-per-call USDC micropayments on Base. Includes MCP server with 43 tools (Streamable HTTP), OpenAPI 3.0 spec, llms.txt, and agents.json for AI-agent discovery. Premium services up to .99/call. ([Discovery](https://afaagent-x402-api.storm-fly.workers.dev/.well-known/x402) | [MCP](https://afaagent-x402-api.storm-fly.workers.dev/mcp) | [GitHub](https://github.com/AfaAgent/x402-api-suite))
 - [Langston Search](https://langston.click/api/search) - Autonomous AI agent's pay-per-query web search API (Brave, falls back to SerpAPI), live on Solana mainnet. 0.02 USDC per query via x402 exact scheme. ([Discovery](https://langston.click/.well-known/x402))
+- [Steward — Brian Booms](https://pay.brianbooms.com) - Live x402 merchant rail by AI-assisted artist Brian Booms: 60+ pay-per-call data endpoints and a buyable music/data catalog, USDC on Base (also Polygon/Arbitrum/Avalanche/Solana on select routes), no accounts or API keys. Machine descriptor at https://pay.brianbooms.com/.well-known/x402 ; storefront for agents at https://brianbooms.com/agents/
 
 
 ### High-Volume Production Deployments
@@ -864,7 +865,6 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents with x402.
 - [Vault-0](https://github.com/0-Vault/Vault-0) - Encrypted secret vault, agent monitor, and x402 wallet for OpenClaw. Handles 402 detection, EIP-3009 signing, and policy-gated auto-settlement.
 - [CardZero](https://cardzero.ai) - Payment wallet for AI agents on Base L2. Each agent gets an ERC-4337 smart contract wallet with owner-controlled spending rules (per-tx limits, daily caps, whitelist, freeze). x402 buyer support via `POST /v1/x402/pay`. [ClawHub](https://clawhub.ai/mrocker/cardzero) | [GitHub](https://github.com/mrocker/CardZero) | [API Docs](https://cardzero.ai/docs/api)
-- [The Booms Hub](https://brianbooms.com) - Free agent tools from independent composer Brian Booms — Fee Oracle (cheapest-route finder for crypto transfers), address validator, tip dry-run, and receipt checker. Tips are voluntary and receiving-only; paid sales stopped 2026-09-18.
 - [Aeon](https://github.com/aaronjmars/aeon) - Autonomous agent framework that runs unattended on GitHub Actions. Skills can hit x402-gated endpoints and settle USDC through the Bankr gateway, letting scheduled agents make paid API calls and on-chain actions with no human in the loop. MIT. ([GitHub](https://github.com/aaronjmars/aeon))
 
 ### Asia Intelligence & Bilingual AI
@@ -1259,7 +1259,6 @@ Projects building with or extending x402.
 - [AI Code Review API](https://x402-code-review.x402-cr.workers.dev) - Autonomous AI code review service accepting x402 micropayments (USDC on Base). Automated security audits, bug detection, and code quality analysis for GitHub pull requests. ([Docs](https://x402-code-review.x402-cr.workers.dev/.well-known/x402.json))
 - [BountyVerdict](https://github.com/cristianmoroaica/bountyverdict) - Seven production x402 decision APIs for GitHub due diligence, agent skill and instruction audits, CI diagnosis, and MCP compatibility, with Base USDC payments, free samples, OpenAPI, and installable skills.
 
-- [The Booms Hub](https://brianbooms.com) - Receiving-only tips plus four free agent tools — the Fee Oracle (cheapest-route finder for crypto transfers), an address validator, a tip dry-run, and a receipt checker; paid sales stopped 2026-09-18.
 
 ## 📊 Ecosystem Market Data
 
